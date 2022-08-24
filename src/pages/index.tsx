@@ -1,14 +1,15 @@
 import type { NextPage } from 'next'
 
 import Header from '../components/Header'
-import Banner from '../components/Banner'
+import Banner from '../components/Home/Banner'
 
 import { Box, Divider, Flex, Heading } from '@chakra-ui/react'
-import TravelType from '../components/TravelType'
-import Continents from '../components/Continents'
+import TravelType from '../components/Home/TravelType'
+import Continents from '../components/Home/Continents'
 
 const Home: NextPage = () => {
   return (
+    <>
     <Flex
       flexDir="column"
       align="center"
@@ -20,9 +21,10 @@ const Home: NextPage = () => {
         maxW="1200px"
         width="100vw"
         px="4"
-        mt="24"
+        mt={["12", "12", "24"]}
         mb="16"
         align="center"
+        flexWrap="wrap"
         justifyContent="space-around"
       >
         <TravelType icon='cocktail' text='vida noturna'/>
@@ -38,6 +40,7 @@ const Home: NextPage = () => {
       />
       <Continents />
     </Flex>
+    </>
   )
 }
 

@@ -5,7 +5,7 @@ import { Flex, Heading, Box, Image, Text } from '@chakra-ui/react'
 const Banner: NextPage = () => {
     return (
         <Flex
-            width="100vw"
+            width="100%"
             height={["25vh", "25vh", "35vh"]}
             backgroundImage="images/background.png"
             bgRepeat="no-repeat"

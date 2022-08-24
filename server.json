@@ -1,0 +1,47 @@
+{
+    "continents": [
+        {
+            "id": "europe",
+            "name": "Europa",
+            "title": "O continente mais antigo",
+            "image": "images/Europe.png",
+            "headerImage": "images/Europe/EuropeBanner.png",
+            "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+            "contries_qtd": 50,
+            "languages": 60,
+            "cities": 27,
+            "contries": [
+                {
+                    "name": "Londres",
+                    "country": "Reino Unido",
+                    "country_flag": "images/Europe/flags/uk.png",
+                    "city_image": "images/Europe/cities/london.png"
+                },
+                {
+                    "name": "Paris",
+                    "country": "França",
+                    "country_flag": "images/Europe/flags/franch.png",
+                    "city_image": "images/Europe/cities/paris.png"
+                },
+                {
+                    "name": "Roma",
+                    "country": "Itália",
+                    "country_flag": "images/Europe/flags/italy.png",
+                    "city_image": "images/Europe/cities/rome.png"
+                },
+                {
+                    "name": "Praga",
+                    "country": "República tcheca",
+                    "country_flag": "images/Europe/flags/TR.png",
+                    "city_image": "images/Europe/cities/praga.png"
+                },
+                {
+                    "name": "Amsterdã",
+                    "country": "Holanda",
+                    "country_flag": "images/Europe/flags/holand.png",
+                    "city_image": "images/Europe/cities/amsterda.png"
+                }
+            ]
+        }
+    ]
+}
