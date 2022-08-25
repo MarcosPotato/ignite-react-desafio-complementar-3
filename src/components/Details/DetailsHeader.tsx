@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react"
+import { Box, Flex, Heading } from "@chakra-ui/react"
 
 interface DetailsHeaderProps{
     image: string
@@ -9,22 +9,26 @@ export default function DetailsHeader({ image, title }: DetailsHeaderProps){
     return(
         <Flex
             width="100%"
-            height="500px"
+            height={["25vh", "25vh", "500px"]}
             bgImage={image}
             objectFit="contain"
             bgSize="cover"
             justifyContent="center"
-            alignItems="flex-end"
+            alignItems={["center", "center", "flex-end"]}
         >
-            <Heading
+            <Box 
                 width="100%"
                 maxW="1200px"
-                p="25px"
-                color="white" 
-                fontWeight="bold"
             >
-                { title }
-            </Heading>
+                <Heading
+                    p="25px"
+                    color="white" 
+                    fontWeight="bold"
+                    textAlign={["center", "center", "left"]}
+                >
+                    { title }
+                </Heading>
+            </Box>
         </Flex>
     )
 }

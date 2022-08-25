@@ -1,11 +1,18 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 
 import Header from '../components/Header'
 import Banner from '../components/Home/Banner'
 
-import { Box, Divider, Flex, Heading } from '@chakra-ui/react'
+import { Divider, Flex} from '@chakra-ui/react'
 import TravelType from '../components/Home/TravelType'
 import Continents from '../components/Home/Continents'
+
+interface Continent{
+  id: string
+  name: string
+  title: string
+  image: string
+}
 
 const Home: NextPage = () => {
   return (
